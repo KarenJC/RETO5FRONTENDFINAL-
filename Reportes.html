@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Reportes</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/FuncionesReportes.js"></script>  
+</head>
+
+<body style="background-color:#FFE0C1"> 
+    <a href="ServiMedic.html"><img src="home.png" width="50" height="50"></a>
+    <h1> <center> <font color="#954A00"> REPORTES </font></center></h1>
+
+<!Estilo Tabla>
+
+<style> table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<p><center>
+    
+
+    <input type="date" id="RstarDate" placeholder="descripcion">
+    <input type="date" id="RdevolutionDate" placeholder="descripcion">
+</p></center>
+    
+<p><center> <button onclick="traerReporteStatus()"> Generar Reporte por Estado Reservas </button></p></center>
+    <center><div id="resultadoStatus"></div></center>
+
+<p><center> <button onclick="traerReporteDate()"> Generar Reporte por Fecha </button></p></center>
+    <center><div id="resultadoDate"></div></center>
+
+<p><center> <button onclick="traerReporteClientes()"> Generar Reporte Cantidad de Reservas por Cliente </button></p></center>
+    <center><div id="resultadoClientes"></div></center>
+
+</body>
+</html> 

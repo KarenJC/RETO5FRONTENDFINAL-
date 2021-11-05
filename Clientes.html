@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<title> Clientes </title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/FuncionesClientes.js"></script>
+
+</head>
+
+
+<body style="background-color:#FEFFBC">
+  <a href="ServiMedic.html"><img src="home.png" width="50" height="50"></a> 
+  <h1> <center> <font color="#7C6602"> CLIENTES </font></center></h1>
+
+<!Estilo Tabla>
+
+<style> table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<!Formulario>
+
+<script type="text/javascript"> 
+window.onload = traerInformacionClientes();
+</script>
+<center> <div>
+
+  <input type="text" id="Clemail" placeholder="Correo Electronico">
+  <input type="text" id="Clpassword" placeholder="Contraseña">
+  <input type="text" id="Clname" placeholder="Nombre">
+  <input type="number" id="Clage" placeholder="Edad">
+
+</center> </div>
+
+
+
+<!Botones>
+
+<p><center>
+
+<button onclick="guardarInformacionCliente()" > Guardar</button>
+<button onclick="traerInformacionClientes()" > Consultar</button>
+
+</p></center>
+
+<p><center> <div id="resultado"> </div></center></p>
+
+</body>
+
+</html>

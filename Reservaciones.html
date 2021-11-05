@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Reservaciones</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/FuncionesReservaciones.js"></script>  
+</head>
+
+
+<body style="background-color:#D9DCFF">
+  <a href="ServiMedic.html"><img src="home.png" width="50" height="50"></a>
+ <h1> <center> <font color="#000971"> RESERVACIONES </font></center></h1>
+
+<!Estilo Tabla>
+
+<style> table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<script type="text/javascript">
+window.onload = traerInformacionReservaciones();
+</script>
+ 
+<center>
+<input type="date" id="startDate" placeholder="startDate">
+<input type="date" id="devolutionDate" placeholder="devolutionDate">
+
+<p>
+    <b><font color=#000649> Seleccionar Estado Reserva:</font></b> 
+    <select id="status">
+    <option selected> completed</option>
+    <option selected> cancelled</option>
+    <option selected> Elegir una opción</option>
+</select>
+
+<b><font color=#000649> Seleccionar Cliente:</font></b>
+<select id="select-client"><option selected value="0"> Elegir una opción </option></select>
+    <script type="text/javascript">
+        window.onload = autoInicioRelacionCliente();
+    </script>
+<b><font color=#000649> Seleccionar Doctor:</font></b> 
+<select id="select-doctor"><option selected value="0"> Elegir una opción</option></select>
+        <script type="text/javascript">
+            window.onload = autoInicioRelacionDoctores();
+        </script>
+</p>
+
+
+<p><center>
+    <button onclick=" agregarReservacion()">Guardar Reserva </button>
+    <button onclick=" traerInformacionReservaciones()"> Consultar Reserva</button>
+</p></center>
+
+ <div id="resultado3"></div>
+</body>
+</html>

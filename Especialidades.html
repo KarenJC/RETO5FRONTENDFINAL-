@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<title> Especialidades </title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/FuncionesEspecialidades.js"></script>
+
+</head>
+
+
+<body style="background-color:#E6FFA9">
+  <a href="ServiMedic.html"><img src="home.png" width="50" height="50"></a> 
+  <h1> <center> <font color="#527300"> ESPECIALIDADES </font></center></h1>
+
+<!Estilo Tabla>
+
+<style> table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<!Formulario>
+
+<script type="text/javascript"> 
+window.onload = traerInformacionEsp();
+</script>
+<center> <div>
+
+<div> <center>
+    <input type="text" id="nameEsp" placeholder="Nombre Especialidad">
+    <input type="text" id="descriptionEsp" placeholder="Descripcion">
+    
+</center> </div>
+
+<p><center>
+<button onclick="guardarInformacionEsp()" > Guardar</button>
+<button onclick="traerInformacionEsp()" > Consultar</button>
+
+</p></center>
+
+<p><center><div id="resultado2"></center></div></p>
+
+</body>
+
+
+</html>
